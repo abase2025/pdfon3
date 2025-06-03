@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestOfThePDF - Ferramentas PDF Profissionais</title>
+    <meta name="description" content="Converta, edite e manipule seus PDFs com as melhores ferramentas online. Rápido, seguro e gratuito!">
+    <meta name="keywords" content="PDF, converter, editar, Word, Excel, OCR, comprimir, desbloquear">
+    <meta name="author" content="BestOfThePDF">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- PDF Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    
+    <!-- Word Processing Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.8.2/docx.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="assets/images/logo.svg" alt="BestOfThePDF" class="logo">
+                <span class="brand-text">BestOfThePDF</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#ferramentas">Ferramentas</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Ferramentas PDF Profissionais</h1>
+            <p class="hero-subtitle">Converta, edite e manipule seus PDFs com facilidade. Mais de 15 ferramentas gratuitas para todas as suas necessidades de documentos.</p>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <div class="upload-area" id="uploadArea">
+                <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                <h3 class="upload-title">Arraste seus arquivos aqui</h3>
+                <p class="upload-subtitle">ou clique para selecionar</p>
+                <div class="file-types">
+                    Suporte para PDF, DOC, DOCX, JPG, PNG • Máximo 100MB por arquivo
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="ferramentas" class="tools-section">
+        <div class="container">
+            <h2 class="section-title">Ferramentas Mais Populares</h2>
+            <div class="tools-grid">
+                <!-- Converter Tools -->
+                <div class="tool-category">
+                    <h3 class="category-title">Converter</h3>
+                    
+                    <div class="tool-card" data-tool="pdf-to-word">
+                        <i class="fas fa-file-word tool-icon"></i>
+                        <h4 class="tool-title">PDF para Word</h4>
+                        <p class="tool-description">Converta PDFs para documentos Word editáveis mantendo a formatação original.</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="word-to-pdf">
+                        <i class="fas fa-file-pdf tool-icon"></i>
+                        <h4 class="tool-title">Word para PDF</h4>
+                        <p class="tool-description">Transforme documentos Word em PDFs profissionais com qualidade superior.</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="pdf-ocr">
+                        <i class="fas fa-eye tool-icon"></i>
+                        <h4 class="tool-title">PDF OCR</h4>
+                        <p class="tool-description">Extraia texto de PDFs escaneados com reconhecimento óptico de caracteres.</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="pdf-to-excel">
+                        <i class="fas fa-file-excel tool-icon"></i>
+                        <h4 class="tool-title">PDF para Excel</h4>
+                        <p class="tool-description">Converta tabelas de PDF para planilhas Excel editáveis.</p>
+                    </div>
+                </div>
+
+                <!-- Edit Tools -->
+                <div class="tool-category">
+                    <h3 class="category-title">Editar</h3>
+                    
+                    <div class="tool-card" data-tool="unlock-pdf">
+                        <i class="fas fa-unlock tool-icon"></i>
+                        <h4 class="tool-title">Desbloquear PDF</h4>
+                        <p class="tool-description">Remova senhas e restrições de PDFs protegidos para edição livre.</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="remove-watermark">
+                        <i class="fas fa-eraser tool-icon"></i>
+                        <h4 class="tool-title">Remover Marca D'água</h4>
+                        <p class="tool-description">Elimine marcas d'água indesejadas mantendo a qualidade do documento.</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="edit-pdf">
+                        <i class="fas fa-edit tool-icon"></i>
+                        <h4 class="tool-title">Editar PDF</h4>
+                        <p class="tool-description">Adicione texto, imagens e formas aos seus documentos PDF.</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="compress-pdf">
+                        <i class="fas fa-compress tool-icon"></i>
+                        <h4 class="tool-title">Comprimir PDF</h4>
+                        <p class="tool-description">Reduza o tamanho dos seus PDFs mantendo a qualidade visual.</p>
+                    </div>
+                </div>
+
+                <!-- Organize Tools -->
+                <div class="tool-category">
+                    <h3 class="category-title">Organizar</h3>
+                    
+                    <div class="tool-card" data-tool="merge-pdf">
+                        <i class="fas fa-object-group tool-icon"></i>
+                        <h4 class="tool-title">Juntar PDF</h4>
+                        <p class="tool-description">Combine múltiplos PDFs em um único documento organizado.</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="split-pdf">
+                        <i class="fas fa-cut tool-icon"></i>
+                        <h4 class="tool-title">Dividir PDF</h4>
+                        <p class="tool-description">Separe páginas específicas ou divida PDFs em documentos menores.</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="rotate-pdf">
+                        <i class="fas fa-redo tool-icon"></i>
+                        <h4 class="tool-title">Girar PDF</h4>
+                        <p class="tool-description">Rotacione páginas de PDF para a orientação correta.</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="google-docs">
+                        <i class="fab fa-google tool-icon"></i>
+                        <h4 class="tool-title">Abrir no Google Docs</h4>
+                        <p class="tool-description">Converta e abra documentos diretamente no Google Docs para edição online.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="recursos" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Por que escolher o BestOfThePDF?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3 class="feature-title">100% Seguro</h3>
+                    <p class="feature-description">Seus arquivos são criptografados e automaticamente deletados após 2 horas.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    <h3 class="feature-title">Rápido e Eficiente</h3>
+                    <p class="feature-description">Processamento otimizado que converte seus documentos em segundos.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-cloud feature-icon"></i>
+                    <h3 class="feature-title">Sem Instalação</h3>
+                    <p class="feature-description">Funciona diretamente no seu navegador, sem necessidade de downloads.</p>
+                </div>
+
+                <div class="feature-card">
+                    <i class="fas fa-gift feature-icon"></i>
+                    <h3 class="feature-title">Gratuito</h3>
+                    <p class="feature-description">Todas as ferramentas essenciais disponíveis gratuitamente, sem limites.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.svg" alt="BestOfThePDF" class="footer-logo">
+                    <span class="footer-brand-text">BestOfThePDF</span>
+                    <p class="footer-description">Ferramentas PDF profissionais para todas as suas necessidades.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Ferramentas</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">PDF para Word</a></li>
+                            <li><a href="#" class="footer-link">Word para PDF</a></li>
+                            <li><a href="#" class="footer-link">PDF OCR</a></li>
+                            <li><a href="#" class="footer-link">Desbloquear PDF</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">Empresa</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Sobre</a></li>
+                            <li><a href="#" class="footer-link">Privacidade</a></li>
+                            <li><a href="#" class="footer-link">Termos de Uso</a></li>
+                            <li><a href="#" class="footer-link">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-title">Suporte</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Central de Ajuda</a></li>
+                            <li><a href="#" class="footer-link">FAQ</a></li>
+                            <li><a href="#" class="footer-link">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2025 bestofthepdf.com - Criado por Harrison Costa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Processing Modal -->
+    <div id="processingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🔄 Processando seu arquivo...</h3>
+            </div>
+            <div class="modal-body">
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">Iniciando...</div>
+                    <div class="progress-percentage" id="progressPercentage">0%</div>
+                </div>
+                <div class="processing-animation">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>✅ Arquivo Convertido com Sucesso!</h3>
+                <button class="modal-close" onclick="UI.hideDownloadModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="download-info" id="downloadInfo">
+                    <!-- Informações do arquivo serão inseridas aqui -->
+                </div>
+                
+                <div class="download-actions">
+                    <button class="btn btn-primary btn-download" id="downloadBtn">
+                        📥 Baixar Arquivo
+                    </button>
+                </div>
+                
+                <div class="online-editors">
+                    <h4>🌐 Ou abra online para editar:</h4>
+                    <div class="editor-buttons">
+                        <button class="btn btn-editor google-docs" id="googleDocsBtn">
+                            📝 Google Docs
+                        </button>
+                        <button class="btn btn-editor office-online" id="officeOnlineBtn">
+                            📄 Office Online
+                        </button>
+                        <button class="btn btn-editor onlyoffice" id="onlyOfficeBtn">
+                            📋 OnlyOffice
+                        </button>
+                        <button class="btn btn-editor adobe" id="adobeBtn">
+                            🔴 Adobe Acrobat
+                        </button>
+                        <button class="btn btn-editor zoho" id="zohoBtn">
+                            📊 Zoho Writer
+                        </button>
+                        <button class="btn btn-editor notion" id="notionBtn">
+                            📓 Notion
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div id="notificationContainer" class="notification-container"></div>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/file-handler.js"></script>
+    <script src="assets/js/converters.js"></script>
+    <script src="assets/js/ui-components.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
